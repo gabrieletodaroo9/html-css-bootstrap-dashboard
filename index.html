@@ -63,10 +63,144 @@
 
     <!-- MAIN -->
 
-    
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-9">
+                <div class="d-flex justify-content-between">
+                    <h3>Catalogo Libri</h3>
+                    <div class="btn btn-primary">Aggiungi Libro</div>
+                </div>
+
+                <!-- TABLE -->
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Titolo</th>
+      <th scope="col">Data Prestito</th>
+      <th scope="col">Stato</th>
+      <th scope="col">Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+
+            <div class="col-3">
+
+                <!-- TODO -->
+
+                <div class="card mb-4">
+                    <h3 class="card-header p-2">Todo</h3>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti
+                                    scaduti</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+
+                <div class="card">
+                    <h3 class="card-header">F.A.Q.</h3>
+                    <div class="card-body">
+
+                        <!-- ACCORDION -->
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Per inserire un nuovo titolo nel sistema, devi prima
+                                        accedere al tuo pannello di controllo, quindi navigare nella sezione di Gestione
+                                        Catalogo e cliccare sul menu "Libri" o "Catalogo" per trovare e selezionare il
+                                        pulsante "+ Aggiungi Nuovo Libro" o "Nuovo Prodotto".</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">L'accesso all'anagrafica utenti richiede di effettuare
+                                        il login al sistema e poi navigare nel menu laterale per selezionare la voce
+                                        "Utenti", "Clienti" o "Anagrafica".</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Sì, l'utilizzo della dashboard da mobile è possibile se
+                                        è stata progettata per essere responsive, il che permette una navigazione
+                                        ottimale senza bisogno di zoom e scorrimento orizzontale.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
 
 
 
+        <!-- JAVASCRIPT -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 
 </body>
 
