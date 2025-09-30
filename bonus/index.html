@@ -29,7 +29,7 @@
 
     <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img width="50" height="50" src="../assets/img/duck.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,12 +52,12 @@
                             <a class="nav-link" href="#">Help</a>
                         </li>
 
-                    </ul>
-                    <form class="d-flex" role="search">
+                    </ul></div>
+                    <form class="d-flex order-first order-lg-1" role="search">
 
-                        <input class="form-control me-2 bg-light " type="search" placeholder="Cerca..."
+                        <input class="form-control me-2 bg-light d-none d-lg-inline" type="search" placeholder="Cerca..."
                             aria-label="Search">
-                        <div class="dropdown">
+                        <div class="dropdown ">
                             <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <img src="../assets/img/Foto Profilo Gabriele Roma.PNG" width="40" height="40"
@@ -70,7 +70,7 @@
                             </ul>
                         </div>
                     </form>
-                </div>
+                
             </div>
         </nav>
     </header>
@@ -95,7 +95,7 @@
 
                     <!-- CARD -->
                     <div class="row row-cols-2 row-cols-md-2 row-cols-xl-3 "
-                        style="height:calc( 100vh - 170px ); width: 100%;overflow-y: auto;">
+                        style="height:calc( 100vh - 150px ); width: 100%;overflow-y: auto;">
                         <div class="col mb-4">
                             <div class="card h-100">
                                 <img src="https://www.ibs.it/images/9788804666929_0_0_424_0_75.jpg"
@@ -531,15 +531,31 @@
                             <h5 class="card-title">Notifiche recenti</h5>
                             <ul>
                                 <li>
-                                    <p class="card-text">Mario Rossi ha restituito "Shining"
+                                    <p class="card-text pt-2">Mario Rossi ha restituito "Shining"
+                                        <i class="bi bi-check-circle-fill text-success"></i>
                                     </p>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
-                                    <p class="card-text">Dante Alighieri ha acquistato "La Divina Commedia"
+                                    <p class="card-text pt-2">Dante Alighieri ha preso in prestito "La Divina Commedia"
+                                        <i class="bi bi-dash-circle-fill text-warning"></i>
                                     </p>
                                 </li>
+                                <li>
+                                    <p class="card-text pt-2">Luca Bianchi ha preso in prestito "Il signore degli anelli"
+                                        <i class="bi bi-dash-circle-fill text-warning"></i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="card-text pt-2">"Il codice Da Vinci" non è più disponibile
+                                        <i class="bi bi-exclamation-circle-fill text-danger"></i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="card-text pt-2">Luigi Rossi ha preso in prestito "Le cronache di Narnia: il leone, la strega e l'armadio"
+                                        <i class="bi bi-dash-circle-fill text-warning"></i>
+                                    </p>
+                                </li>
+
                             </ul>
                             <a class="icon-link icon-link-hover"
                                 style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);--bs-link-hover-color-rgb: 25, 135, 84;"
@@ -565,7 +581,7 @@
                             <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed bg-light" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                                             Come aggiungere un nuovo libro?
@@ -583,7 +599,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed bg-light" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                             Come posso accedere all'anagrafica utenti?
@@ -600,7 +616,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed bg-light" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                             Come aggiungere un nuovo libro?
@@ -612,6 +628,54 @@
                                             se
                                             è stata progettata per essere responsive, il che permette una navigazione
                                             ottimale senza bisogno di zoom e scorrimento orizzontale.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                            Cosa succede se un utente dimentica la sua password?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Nella schermata di login, l'utente deve cliccare sul link "Password
+                                            Dimenticata?". Il sistema invierà automaticamente un'e-mail all'indirizzo
+                                            registrato con le istruzioni per reimpostare la password in sicurezza.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                            Come posso aggiungere un nuovo genere letterario al sistema?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            I nuovi generi sono gestiti separatamente. Accedi al tuo pannello di
+                                            controllo, cerca il menu "Configurazioni" o "Impostazioni Catalogo", e
+                                            seleziona la voce "Generi/Tag" per aggiungere o modificare le categorie.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                            È possibile caricare l'immagine di copertina in formato .webp?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Sì, il sistema supporta i formati immagine più comuni, inclusi .jpg, .png e
+                                            il moderno formato .webp. Assicurati solo che la dimensione del file sia
+                                            inferiore al limite massimo specificato per il caricamento.
                                         </div>
                                     </div>
                                 </div>
