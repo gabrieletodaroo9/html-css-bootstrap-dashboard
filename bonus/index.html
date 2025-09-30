@@ -23,7 +23,7 @@
 
 <!-- BODY -->
 
-<body>
+<body style="overflow: hidden; height: 100vh;">
 
     <!-- NAVBAR -->
 
@@ -74,7 +74,7 @@
             <div class="row mt-4">
                 <div class="col-9">
                     <div class="d-flex justify-content-between mb-4">
-                        <h3>Catalogo Libri</h3>
+                        <h1>Catalogo Libri</h1>
                         <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
                             Aggiungi libro
                             <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- CARD -->
-                    <div class="row row-cols-1 row-cols-md-3">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 "style="height:calc( 100vh - 170px ); width: 100%;overflow-y: auto;">
                         <div class="col mb-4">
                             <div class="card h-100">
                                 <img src="https://www.ibs.it/images/9788804666929_0_0_424_0_75.jpg" class="card-img-top"
@@ -189,7 +189,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col mb-4">
                             <div class="card h-100">
                                 <img src="https://m.media-amazon.com/images/I/713Hs2qzlZL._SL1483_.jpg"
                                     class="card-img-top" style="height:50vh;" alt="...">
@@ -224,11 +224,295 @@
                             </div>
                         </div>
 
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.libraccio.it/images/9788804523413_0_200_314_75.jpg"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Il codice Da Vinci</h5>
+                                    <p class="card-text">Dan Brown</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>-</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-danger">Non disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_2b4JFKW0HyW-ODDgLOCuibD4INcBIj1y4fCnTRK3Py64W8Zx6NIEg6g673p4vPiAodX2qaM2bP3szWeWlrBiVhFHmiDkiDbiDB9piwc"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shining</h5>
+                                    <p class="card-text">Dan Brown</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>-</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-success">Disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://m.media-amazon.com/images/I/61RTafdnuwL._SY466_.jpg"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">La Divina Commedia</h5>
+                                    <p class="card-text">Dante Alighieri</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>21-09-2023</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-warning text-white">In prestito</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1iaaSCq62yfWYbUi1YI60zMu28Px9tSafIdRGh9krZP-qyjQyBKLcBLB7oolgMHRhVBjJEzyKKIimcfMZtvCXIG3FibTOH0PhKH2EDFbN"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Il trono di spade</h5>
+                                    <p class="card-text">George R.R. Martin</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>21-09-2023</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-success">Disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://m.media-amazon.com/images/I/71yjPh8+a3L._SY466_.jpg"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Il mondo di Sofia</h5>
+                                    <p class="card-text">Jostein Gaarder</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>-</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-danger">Non disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://media.mondadoristore.it/picture/978880480631/01/NZO"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le cronache di Narnia:il leone, la strega e l'armadio</h5>
+                                    <p class="card-text">C.S. Lewis</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>25-07-2023</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-warning text-white">In prestito</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://m.media-amazon.com/images/I/41SXWqDdaiL._SY445_SX342_ControlCacheEqualizer_.jpg"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Il piccolo principe</h5>
+                                    <p class="card-text">Antoine De Saint-Exupèry</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>-</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-success">Disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://m.media-amazon.com/images/I/41MChO0uyOL._SY445_SX342_ControlCacheEqualizer_.jpg"
+                                    class="card-img-top" style="height:50vh;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">La storia infinita</h5>
+                                    <p class="card-text">Michael Ende</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Data prestito:
+                                        </span><span>-</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="fw-bold">Stato: </span>
+                                        <span class="badge rounded-pill text-bg-success">Disponibile</span>
+                                    </li>
+                                    <li class="list-group-item"><button type="button"
+                                            class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-trash-fill"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                                        href="#">
+                                        Acquista ora
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
 
                 <div class="col-3">
+
+                    <!-- DASHBOARD RAPIDA -->
+
                     <div class="card">
                         <div class="card-header">
                             Dashboard Rapida
@@ -261,6 +545,68 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- ACCORDION F.A.Q. -->
+
+                    <div class="card">
+                        <h3 class="card-header">F.A.Q.</h3>
+                        <div class="card-body">
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Come aggiungere un nuovo libro?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Per inserire un nuovo titolo nel sistema, devi prima
+                                            accedere al tuo pannello di controllo, quindi navigare nella sezione di
+                                            Gestione
+                                            Catalogo e cliccare sul menu "Libri" o "Catalogo" per trovare e selezionare
+                                            il
+                                            pulsante "+ Aggiungi Nuovo Libro" o "Nuovo Prodotto".</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Come posso accedere all'anagrafica utenti?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">L'accesso all'anagrafica utenti richiede di
+                                            effettuare
+                                            il login al sistema e poi navigare nel menu laterale per selezionare la voce
+                                            "Utenti", "Clienti" o "Anagrafica".</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Sì, l'utilizzo della dashboard da mobile è possibile
+                                            se
+                                            è stata progettata per essere responsive, il che permette una navigazione
+                                            ottimale senza bisogno di zoom e scorrimento orizzontale.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
