@@ -72,7 +72,7 @@
 
         <div class="container">
             <div class="row mt-4">
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div class="d-flex justify-content-between mb-4">
                         <h1>Catalogo Libri</h1>
                         <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
@@ -85,7 +85,8 @@
                     </div>
 
                     <!-- CARD -->
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 "style="height:calc( 100vh - 170px ); width: 100%;overflow-y: auto;">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-xl-3 "
+                        style="height:calc( 100vh - 170px ); width: 100%;overflow-y: auto;">
                         <div class="col mb-4">
                             <div class="card h-100">
                                 <img src="https://www.ibs.it/images/9788804666929_0_0_424_0_75.jpg" class="card-img-top"
@@ -509,11 +510,11 @@
                 </div>
 
 
-                <div class="col-3">
+                <div class="col-lg-3" style="height:calc( 100vh - 110px );overflow-y: auto;">
 
                     <!-- DASHBOARD RAPIDA -->
 
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-header">
                             Dashboard Rapida
                         </div>
@@ -552,60 +553,63 @@
                         <h3 class="card-header">F.A.Q.</h3>
                         <div class="card-body">
 
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseOne">
                                             Come aggiungere un nuovo libro?
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                                         <div class="accordion-body">Per inserire un nuovo titolo nel sistema, devi prima
                                             accedere al tuo pannello di controllo, quindi navigare nella sezione di
                                             Gestione
                                             Catalogo e cliccare sul menu "Libri" o "Catalogo" per trovare e selezionare
                                             il
-                                            pulsante "+ Aggiungi Nuovo Libro" o "Nuovo Prodotto".</div>
+                                            pulsante "+ Aggiungi Nuovo Libro" o "Nuovo Prodotto".
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                             Come posso accedere all'anagrafica utenti?
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">L'accesso all'anagrafica utenti richiede di
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            L'accesso all'anagrafica utenti richiede di
                                             effettuare
                                             il login al sistema e poi navigare nel menu laterale per selezionare la voce
-                                            "Utenti", "Clienti" o "Anagrafica".</div>
+                                            "Utenti", "Clienti" o "Anagrafica".
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Posso usare questa dashboard da mobile?
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            Come aggiungere un nuovo libro?
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Sì, l'utilizzo della dashboard da mobile è possibile
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Sì, l'utilizzo della dashboard da mobile è possibile
                                             se
                                             è stata progettata per essere responsive, il che permette una navigazione
-                                            ottimale senza bisogno di zoom e scorrimento orizzontale.</div>
+                                            ottimale senza bisogno di zoom e scorrimento orizzontale.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
