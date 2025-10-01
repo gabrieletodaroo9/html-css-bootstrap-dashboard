@@ -49,14 +49,77 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Help</a>
                         </li>
-
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 bg-white " type="search" placeholder="Cerca..."
-                            aria-label="Search" />
-                        <button class="btn btn-outline-light" type="submit">Cerca</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container pt-5">
+            <h1 class="pb-5">Nuovo libro</h1>
+
+            <!-- FORM -->
+
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="inputname-author" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="inputname-author"
+                        placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="inputsurname-author" class="form-label">Cognome Autore</label>
+                    <input type="password" class="form-control" id="inputsurname-author"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+                <div class="col-12">
+                    <label for="inputbook-title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="inputbook-title"
+                        placeholder="Inserisci il titolo del libro">
+                </div>
+                <div class="form-text" id="inputbook-title">Titolo versione italiana</div>
+
+                <div class="col-12 col-md-4">
+                    <label for="book-gender" class="form-label">Genere</label>
+                    <select class="form-select" id="book-gender" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Giallo</option>
+                        <option value="2">Horror</option>
+                        <option value="3">Romantico</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="inputpublication-year" class="form-label">Anno di Pubblicazione</label>
+                    <input type="number" class="form-control" id="inputpublication-year" placeholder="Inserisci l'anno">
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="input-isbn" class="form-label">ISBN#</label>
+                    <input type="number" class="form-control" id="input-isbn" placeholder="Inserisci il codice ISBN#">
+                </div>
+
+                <hr class="mt-5 mb-3 text-secondary">
+
+                <div class="col-12">
+                    <label for="inputNote" class="form-label">Note</label>
+                    <textarea class="form-control" id="inputNote" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
