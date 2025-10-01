@@ -79,8 +79,8 @@
     <!-- MAIN -->
 
     <main>
-  
-<!-- TRAME -->
+
+        <!-- TRAME -->
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
             <div class="offcanvas-header">
@@ -345,7 +345,8 @@
                 <div class="col-12 col-lg-9">
                     <div class="d-flex justify-content-between mb-4">
                         <h1>Catalogo Libri</h1>
-                        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="add-book.html">
+                        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                            href="add-book.html">
                             Aggiungi libro
                             <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
                                 <path
@@ -360,11 +361,15 @@
                         style="height:calc( 100vh - 150px ); width: 100%;overflow-y: auto;">
                         <div class="col mb-4">
                             <div class="card h-100">
-                                <div class="img-container">
+                                <div class="img-container position-relative ">
+                                    <div class="card-overlay" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">
+                                        <span class="overlay-text">Clicca per visualizzare la trama</span>
+                                    </div>
                                     <img src="https://www.ibs.it/images/9788804666929_0_0_424_0_75.jpg"
-                                    class="card-img-top img-fluid" style="aspect-ratio: 2/3;" alt="..."
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
-                                    aria-controls="offcanvasRight1">
+                                        class="card-img-top img-fluid" style="aspect-ratio: 2/3;" alt="..."
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                        aria-controls="offcanvasRight1">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">I pilastri della terra</h5>
@@ -474,7 +479,7 @@
                                                 class="bi bi-trash-fill"></i></button>
                                     </li>
                                 </ul>
-                               <div class="card-body d-flex justify-content-between">
+                                <div class="card-body d-flex justify-content-between">
                                     <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;"
                                         href="#">
                                         Acquista
