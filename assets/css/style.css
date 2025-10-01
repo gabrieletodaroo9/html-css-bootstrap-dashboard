@@ -1,4 +1,12 @@
-
 .accordion-button:focus {
     box-shadow: 0 0 0 0.10rem rgba(150, 150, 150, 0.25);
+}
+
+.mb-4>.card:hover {
+    cursor: pointer;
+
+    transform: translateY(-5px);
+
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
