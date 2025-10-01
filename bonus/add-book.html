@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bootstrap Bonus</title>
+
+    <!-- FRAMEWORKS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- ICONS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<!-- BODY -->
+
+<body style="overflow: hidden; height: 100vh;">
+
+    <!-- NAVBAR -->
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="50" height="50" src="../assets/img/duck.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <form class="d-flex order-first order-lg-1" role="search">
+
+                    <input class="form-control me-2 bg-light d-none d-lg-inline" type="search" placeholder="Cerca..."
+                        aria-label="Search">
+                    <div class="dropdown ">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../assets/img/Foto Profilo Gabriele Roma.PNG" width="40" height="40"
+                                class="rounded-circle" alt="Avatar">
+                        </button>
+                        <ul class="dropdown-menu" style="left: -50px !important;">
+                            <li><button class="dropdown-item" type="button">Profilo</button></li>
+                            <li><button class="dropdown-item" type="button">I miei libri</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+        </nav>
+    </header>
+    
+<!-- MAIN -->
+
+<main>
+
+    <div class="container mt-5">
+
+  <h1 class="pb-5">Nuovo libro</h1>
+
+            <!-- FORM -->
+
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="inputname-author" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="inputname-author"
+                        placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="inputsurname-author" class="form-label">Cognome Autore</label>
+                    <input type="password" class="form-control" id="inputsurname-author"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+                <div class="col-12">
+                    <label for="inputbook-title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="inputbook-title"
+                        placeholder="Inserisci il titolo del libro">
+                </div>
+                <div class="form-text" id="inputbook-title">Titolo versione italiana</div>
+
+                <div class="col-12 col-md-3">
+                    <label for="book-gender" class="form-label">Genere</label>
+                    <select class="form-select" id="book-gender" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Romanzo</option>
+                        <option value="2">Racconto</option>
+                        <option value="3">Fumetto</option>
+                        <option value="4">Biografia</option>
+                        <option value="5">Storia</option>
+                        <option value="6">Scienza</option>
+                        <option value="7">Fantasy</option>
+                        <option value="8">Horror</option>
+                        <option value="9">Thriller</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label for="inputpublication-year" class="form-label">Anno di Pubblicazione</label>
+                    <select class="form-select" style="max-height: 300px;" id="inputpublication-year" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">2025</option>
+                        <option value="2">2024</option>
+                        <option value="3">2023</option>
+                        <option value="4">2022</option>
+                        <option value="5">2021</option>
+                        <option value="6">2020</option>
+                        <option value="7">2019</option>
+                        <option value="8">2018</option>
+                        <option value="9">2017r</option>
+                         <option value="10">2016</option>
+                        <option value="11">2015</option>
+                        <option value="12">2014</option>
+                        <option value="13">2013</option>
+                        <option value="14">2012</option>
+                        <option value="15">2011</option>
+                        <option value="16">2010</option>
+                        <option value="17">2009</option>
+                        <option value="18">2008</option>
+                         <option value="19">2007</option>
+                        <option value="20">2006</option>
+                        <option value="21">2005</option>
+                        <option value="22">2004</option>
+                        <option value="23">2003</option>
+                        <option value="24">2002</option>
+                        <option value="25">2001</option>
+                        <option value="26">1991-2000</option>
+                        <option value="27">1981-1990</option>
+                         <option value="28">1971-1980</option>
+                        <option value="29">1961-1970</option>
+                        <option value="30">1951-1960</option>
+                        <option value="31">1941-1950</option>
+                        <option value="32">1931-1940</option>
+                        <option value="33">1921-1930</option>
+                        <option value="34">1911-1920</option>
+                        <option value="35">1901-1910</option>
+                        <option value="36">Prima del 1900</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="input-isbn" class="form-label">ISBN#</label>
+                    <input type="number" class="form-control" id="input-isbn" placeholder="Inserisci il codice ISBN#">
+                </div>
+
+                <hr class="mt-5 mb-3 text-secondary">
+
+                <div class="col-12">
+                    <label for="inputNote" class="form-label">Note</label>
+                    <textarea class="form-control" id="inputNote" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-success">Aggiungi Libro</button>
+                </div>
+            </form>
+
+    </div>
+
+
+</main>
+
+
+<!-- JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+</body>
+</html>
